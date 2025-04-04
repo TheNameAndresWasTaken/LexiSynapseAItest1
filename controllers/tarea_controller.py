@@ -1,10 +1,10 @@
 import datetime
 
 class Tarea:
-    def __int__(self, descripcion, fecha_limite, completada=False):
-        self.descripcion = descripcion
-        self.fecha_limite = fecha_limite
-        self.completada = completada
+    def __int__(self, descripcion: str, fecha_limite: datetime, completada : bool=False):
+        self.descripcion: str = descripcion
+        self.fecha_limite: datetime = fecha_limite
+        self.completada : bool= completada
 
     def __str__(self):
         estado = "v" if self.completada else " "
